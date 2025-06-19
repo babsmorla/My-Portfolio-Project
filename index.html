@@ -23,6 +23,8 @@
 
   <title>MyPortfolio </title>
 
+
+
   <style>
     /* Your original CSS with all class names and IDs preserved */
     * {
@@ -481,13 +483,24 @@
     }
 
     #cv-holder {
+
       flex: 0.44;
       margin-top: 3rem;
       margin-bottom: 5rem;
+      transition: transform 0.3s ease;
+
+    }
+
+    #cv-holder:hover {
+      transform: scale(1.1);
+      background-color: #f5eee3f5;
+      border-radius: 2rem;
+
+
     }
 
     #cv-holder li {
-      background-color: #ededed;
+      /* background-color: #ededed; */
       padding: 2rem 4rem;
       list-style: none;
       border-radius: 1.5rem;
@@ -585,7 +598,20 @@
       height: 550px;
       overflow: hidden;
       padding: 20px;
+
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-in-out;
     }
+
+
+
+    #projectHolder.visible {
+
+      opacity: 1;
+      transform: translateY(0);
+    }
+
 
     #projects {
       padding-top: 7rem;
@@ -1004,6 +1030,17 @@
         flex-direction: column;
         margin-left: 2rem;
         margin-right: 2rem;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 0.6s ease-out;
+      }
+
+      #hero.show {
+
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 0.6s ease-out;
+
       }
 
       .left-about,
@@ -1157,7 +1194,7 @@
 </head>
 
 <body>
-  <div >
+  <div>
 
     <header>
       <nav id="nav">
@@ -1181,6 +1218,7 @@
       </nav>
 
     </header>
+
     <section id="hero-background">
 
 
@@ -1202,9 +1240,7 @@
               <li><a href="#about"><button>
                     View My Portfolio <i class="fa-solid fa-arrow-right"></i></button></a></li>
 
-              <!-- <button>
-              Hire Me
-            </button> -->
+
             </span>
 
           </div>
@@ -1215,7 +1251,11 @@
 
         </section>
 
+
+
       </section>
+
+
     </section>
 
     <section id="servicesSection">
@@ -1652,7 +1692,8 @@
               <h2>My Portfolio Project<br>
                 Website</h2>
 
-              <p>Web interfaces and apps crafted with modern design, clean code, and user-focused experiences — a showcase of my journey in frontend development.
+              <p>Web interfaces and apps crafted with modern design, clean code, and user-focused experiences — a
+                showcase of my journey in frontend development.
               </p>
 
             </div>
@@ -1790,6 +1831,8 @@
               <a href="https://www.instagram.com/amazing_babs/"></a>
               <li><i class="fa-brands fa-instagram"></i>Instagram</li>
 
+
+
             </ul>
 
           </div>
@@ -1817,7 +1860,7 @@
           </div>
 
           <div class="submit-btn">
-            <button type="submit" >Send Message</button>
+            <button type="submit">Send Message</button>
           </div>
 
         </div>
@@ -1827,6 +1870,26 @@
 
   </div>
   <script type="module" src="/src/main.jsx"></script>
+
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const boxes = document.querySelectorAll('#projectHolder');
+      const triggerPoint = window.innerHeight - 400;
+
+      boxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+
+        if (boxTop < triggerPoint) {
+          box.classList.add('visible');
+        }
+      });
+    });
+
+
+  </script>
+
+
 </body>
 
 </html>
