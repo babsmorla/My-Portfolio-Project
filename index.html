@@ -1,0 +1,2999 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- icons link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- endline -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- font to be used on website -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>MyPortfolio </title>
+
+  <!-- <style>
+      * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+ 
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: "poppins", aria, sans-serif;
+  width: vw;
+}
+
+header {
+  background-color:#fefed9 ;
+  padding: 2rem;
+   position: sticky;
+    top: 0;
+  padding: 0.7rem;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 1, 2, 0.85);
+  
+}
+
+
+nav {
+  position: sticky;
+  top: 0;
+  padding: 0.7rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #020200; */
+  /* background-color: #222222; */
+  /* margin-top: -2rem;
+  margin-bottom: -; */
+  margin: 1rem auto 1rem auto;
+  max-width: 80%;
+  width: 100%;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(8px); */
+  /* background-color: rgba(11, 49, 106, 0); */
+}
+
+
+
+nav ul {
+  display: flex;
+  column-gap: 3rem;
+  list-style: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.m {
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-size: 1.5rem;
+  color: white;
+  /* color: #344c36; */
+  /* background-color: #f9b121; */
+  /* background-color: #ff6203; */
+  background-color: #1badee;
+  border-radius: 1.3rem;
+  padding: 0.2rem 0.8rem
+}
+
+.morla {
+  color: white;
+  font-weight: 600;
+  font-size: ;
+}
+
+nav button {
+  font-size: 1.5rem;
+  color: #344c36;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding: 1rem 2rem
+}
+
+nav button:hover {
+  /* background-color: #ff6203; */
+  /* background-color: #f9b121; */
+  background-color: #1badee;
+  color: white;
+  cursor: pointer;
+}
+
+nav button:active {
+  /* background-color: #ff6203; */
+  background-color: #ffc653;
+
+}
+
+nav ul li:hover {
+  color: #666565;
+  /* color: #ff6203; */
+  /* color: #f9b121; */
+  cursor: pointer;
+}
+
+#hero {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 7rem;
+  /* background-color:#49b852 ; */
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  font-weight: 450;
+  width: 100%;
+
+
+}
+
+.left-about {
+  width: 50%;
+  /* background-color: #f9b121; */
+}
+
+.left-about p:nth-child(1) {
+  margin-bottom: 1.3rem;
+  font-size: 1.5rem;
+}
+
+.left-about :nth-child(3) {
+  margin-top: 1.3rem;
+  font-size: 1.4rem;
+  width: 80%;
+}
+
+.view-portfolio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  /* background-color: #f9b121; */
+}
+
+
+.view-portfolio button:nth-child(1) {
+  margin-right: 6rem;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #3d3f3c;
+  /* background-color: #344c36; */
+  border-radius: 2rem;
+  padding: 0.6rem 1.5rem;
+  box-shadow: 2rem 0px 1px #9b9592;
+  /* box-shadow: 2rem 0px 1px rgb(249, 177, 33); */
+
+}
+
+.view-portfolio button:nth-child(1):hover {
+  background-color: #1895d2;
+  /* background-color: #188d21; */
+  /* background-color: #188d21; */
+  cursor: pointer;
+}
+
+.view-portfolio button:nth-child(1):active {
+  /* background-color: #49b852; */
+  background-color: #4e504d;
+  transition: 0.25s;
+}
+
+.view-portfolio button:nth-child(2) {
+  margin-right: 6rem;
+  font-size: 1.4rem;
+  color: #344c36 ;
+  background-color:#ffffff;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  /* box-shadow: 3rem 0px 1px rgb(249, 177, 33); */
+
+}
+
+.view-portfolio button:nth-child(2):hover {
+  background-color: #302f2e;
+  color: white;
+  cursor: pointer;
+}
+
+.view-portfolio button:nth-child(2):active {
+  /* background-color: #49b852; */
+  /* background-color: #4e504d; */
+  background-color: #222222;
+  transition: 0.25s;
+}
+
+.view-portfolio button i {
+  margin-left: 2rem;
+  /* background-color: #188d21; */
+  /* background-color: #756e6a; */
+  background-color: #1895d2;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+.image-babs {
+  margin-top: -3rem;
+}
+
+/* jOB BAR
+jOB BAR
+jOB BAR */
+
+#job-bar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 0 1rem;
+  /* background-color: #f9b121; */
+  /* background-color: #ff6203; */
+  /* background-color: #1895d2; */
+  background-color: #1895d2;
+
+}
+
+#job-bar div {
+  color: #ffffff;
+  /* color: #173019; */
+}
+
+#job-bar {
+  background: white;
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.3);
+  transform: rotate(0.8deg);
+  /* 🔄 Permanently rotated */
+  margin-bottom: 6rem;
+}
+
+/* SERVICE SERVICES SERVICES */
+
+#services div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 14rem;
+  margin-right: 17rem;
+  font-size: 1.5rem;
+}
+
+#services p {
+  margin-bottom: 1rem;
+}
+
+p i {
+  margin-right: 1rem;
+  color: #388db2;
+  /* color: #ff6203; */
+  /* color: #f9b121; */
+}
+
+h1 em {
+  /* color: #f9b121; */
+  /* color: #ff6203; */
+  color: #1996ce;
+  font-weight: ;
+  margin-right: 0.5rem;
+}
+
+
+svg {
+  background-color: #ffffff;
+  color: #188d21;
+  border-radius: 5rem;
+  padding: 0.7rem;
+  margin-top: -4rem;
+  margin-bottom: 1rem;
+}
+
+.more-content {
+  display: none;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.more-content.show {
+  display: block;
+}
+
+/* ABOUT SECTION ABOUT SECTION  */
+
+
+
+
+#about {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 10rem;
+  margin-right: 8rem;
+  margin-bottom: -3rem;
+  /* background-color:#49b852 ; */
+}
+
+#about h1 {
+  font-size: 3.5rem;
+  font-weight: 450;
+  width: 100%;
+
+}
+
+.socials ul {
+  padding-left: 9rem;
+  padding-top: -9rem;
+    color: white;
+  display: flex;
+  column-gap: 2rem;
+  margin-left: 60rem;
+  list-style-type: none;
+}
+
+
+
+
+.right-about {
+  color: #ffffff;
+  width: 60%;
+  /* background-color: #f9b121; */
+  margin-top: 2rem;
+
+}
+
+.right-about h1 em {
+  font-weight: 270;
+  /* background-color: #f9b121; */
+}
+
+.right-about p:nth-child(1) {
+  margin-bottom: 1.3rem;
+  font-size: 1.4rem;
+}
+
+.right-about :nth-child(3) {
+  margin-top: 1.3rem;
+  font-size: 1.2rem;
+  width: 92%;
+}
+
+.view-about {
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+
+  /* background-color: #f9b121; */
+}
+
+.view-about button:nth-child(1) {
+  margin-right: 6rem;
+  font-size: 1.4rem;
+  color: #344c36;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding: 0.6rem 1.5rem;
+  /* box-shadow: 2rem 0px 1px rgb(249, 177, 33); */
+
+}
+
+.view-about button:nth-child(1):hover {
+  background-color: #1badee;
+  color: white;
+  cursor: pointer;
+}
+
+.view-about button:nth-child(1):active {
+  background-color: #0f0d0c;
+  transition: 0.25s;
+}
+
+.view-about button i {
+  margin-left: 2rem;
+  color: white;
+  background-color: #000601;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+.image-morla {
+  margin-top: -3rem;
+  padding-right: 17rem;
+
+}
+
+
+#services {
+  margin-bottom: 5rem;
+}
+
+/* NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+
+
+.view-about button i {
+  margin-left: 2rem;
+  color: white;
+  /* background-color: #000601; */
+  background-color: #000601;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+.image-morla {
+  margin-top: -3rem;
+  padding-right: 17rem;
+}
+
+#about-background {
+  /* background-color: #020200; */
+  /* background-color: #222222; */
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+   background-image: url(src/assets/bak2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+
+
+
+#new-services-two {
+  margin-top: 4rem;
+  margin-right: 5rem;
+  margin-left: 10rem;
+  column-gap: rem;
+
+}
+
+#new-services-two {
+  display: grid;
+  grid-template-columns: 0.1fr 2fr 1.7fr 2fr;
+
+}
+
+#new-services-two :nth-child(2) {
+  font-size: 2rem;
+  margin-right: 10rem;
+  margin-left: 4rem;
+  margin-top: -1.1rem;
+
+}
+
+#new-services-two :nth-child(4) {
+
+  font-size: 1.2rem;
+  margin-right: 6rem;
+  margin-left: -2rem;
+
+}
+
+#new-services-two img {
+  margin-right: 5rem;
+  margin-left: -4rem;
+
+}
+
+.one {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+#new-services-two :nth-child(2) p {
+  font-size: 1.3rem;
+  font-weight: 300;
+
+}
+
+
+
+/* ========================================== */
+
+#best-services {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  padding-left: 7rem;
+  /* color: #15501a; */
+}
+
+.services-holder {
+  background-color: #f5f5f5;
+}
+
+#best-services i {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  /* color: #f9b121; */
+  color: #1296d5;
+}
+
+
+#best-services h1 {
+  /* color: rgb(32, 107, 38); */
+  color: #222222;
+}
+
+.rt {
+  margin-left: -10rem;
+}
+
+
+/* ----------------------------------- */
+
+
+#workExperience {
+  background-color: #ffffff;
+}
+
+
+#education-heading div span {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+
+
+#education-heading p {
+  font-size: 1.3rem;
+}
+
+#education h1 {
+  font-size: 2.5rem;
+}
+
+/* ///////////////////////////////////////////////////////////// CV SECTION */
+
+
+
+#cv-maim {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#cv-holder {
+  flex: 0.44;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+#cv-holder li {
+  /* background-color: #f6f6f6; */
+  background-color: #ededed;
+  padding: 2rem 4rem;
+  list-style: none;
+  border-radius: 1.5rem;
+  /* border: 0.1px solid rgb(182, 180, 180); */
+}
+
+.underline {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.1px solid rgb(214, 214, 214);
+}
+
+.underline h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  /* color: #0a5a11; */
+  color: #22222;
+}
+
+.underline h2 i {
+  margin-right: 1rem;
+  color: #ffffff;
+  padding: 1rem;
+  background-color: #388db2;
+  /* background-color: #f9b121; */
+  border-radius: 3rem;
+}
+
+.underline-2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* border-bottom: 1px dashed #ddd; */
+}
+
+.underline-2>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.school {
+  max-width: 70%;
+}
+
+.school h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.school p {
+  font-size: 1.2rem;
+  color: #8f8f8f;
+  margin: 0;
+}
+
+.year {
+  text-align: right;
+  min-width: 80px;
+}
+
+.year p {
+  color: white;
+  margin: 0;
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+  background-color: #838383;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  white-space: nowrap;
+}
+
+/* ///////////////////////////////////////////////////////////// CV SECTION */
+
+#workExperience {
+  margin-top: -4rem;
+  /* background-color: #188d21; */
+}
+
+#education span {
+  padding-top: 3rem;
+}
+
+
+
+/* *******************************************PROJECTS */
+
+#myProjects {
+  margin-top: -9rem;
+  /* background-color: #222323; */
+  /* background-color: #3d3f3c; */
+   background-image: url(src/assets/bak.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 4rem;
+
+}
+
+
+#projectMain #projectHolder {
+  /* background-color: #494949; */
+ 
+}
+
+ #projectMain2 #projectHolder {
+  /* background-color: #222323; */
+} 
+
+#projectMain3 #projectHolder {
+  /* background-color: #222323; */
+  /* background-color: #0a3a12; */
+}
+
+#projectHolder {
+  column-gap: 3rem;
+  display: flex;
+  /* background-color: #222222; */
+  /* background-color: rgba(160, 233, 165, 0.3); */
+  opacity: ;
+  width: 90%;
+  list-style: none;
+  border-radius: 1.5rem;
+  height: 550px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#projects {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+
+#projects-heading div span {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+
+#projects-heading p {
+  font-size: 1.3rem;
+  color: white;
+}
+
+#projects h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+#projectMain {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: ;
+}
+
+
+
+
+
+#projectHolder .projectImage {
+  background-color: #ac3f3f;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  width: 60%;
+}
+
+#projectHolder .projectImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#projectHolder .projectDescription {
+  width: 45%;
+
+  /* background-color: blue; */
+}
+
+.projectDescription {
+  margin-left: 2rem;
+}
+
+.work-tag ul {
+  display: flex;
+  column-gap: 2rem;
+  list-style: none;
+  margin-top: 4rem;
+
+
+}
+
+.work-tag li {
+  /* background-color: #f9b121; */
+  background-color: #32b3ef;
+  padding: 0.8rem 1.3rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem
+}
+
+.projectDescription button{
+  background-color: #f3e0bf ;
+}
+.projectDescription button:hover{
+  background-color: #f8c98f;
+}
+
+.projectDescription button:active{
+  background-color: #fdd4a1;
+  color: white;
+}
+
+
+
+
+
+/* **************************************** PROJECTSSS */
+
+.view-details {
+  margin-right: 6rem;
+  font-size: 1.4rem;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  /* background-color: #344c36; */
+  border-radius: 2rem;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 2rem 0px 1px rgb(170, 170, 170);
+}
+
+.description h2 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  padding-bottom: 3%;
+  color: white;
+}
+
+.description p {
+  color: #f5f5f5;
+  font-size: 1.3rem;
+  width: 85%;
+  padding-bottom: 3rem;
+
+}
+
+#projectMain2 {
+  margin-top: 3rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projectMain3 {
+  margin-top: 3rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projectMain2 .work-tag li {
+  /* background-color: #f9b121; */
+  background-color: #8b47fd;
+  color: white;
+  padding: 0.8rem 1.3rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem
+}
+
+
+#projectMain3 .work-tag li {
+  /* background-color: #f9b121; */
+  background-color: #ff5600;
+  padding: 0.8rem 1.3rem;
+  color: white;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem
+}
+
+#projectMain .work-tag li {
+  /* background-color: #f9b121; */
+  background-color: #5ea51d;
+  padding: 0.8rem 1.3rem;
+  color: white;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem
+}
+
+#servicesSection {
+  padding-bottom: 3rem;
+  background-color: #fff7ed;
+  /* background-color: #ebe9e0; */
+  margin-top: -6rem;
+}
+
+#servicesSection img:hover {
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  cursor: pointer;
+  border-radius: 2rem;
+/* background-color: rgba(0, 0, 0, 0.03); */
+}
+
+
+#school-work {
+  background-color: rgb(247, 240, 214);
+  padding-bottom: rem;
+}
+
+#hero-background {
+  /* background-color: #ffffff; */
+  background-image: url(src/assets/v904-nunny-012.jpg);
+  margin-bottom: -9rem;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* *************************************************CONTACT US EDIT SECTION */
+
+#contact-main {
+  display: flex;
+  background-color: #1296d5;
+  width: 100%;
+  justify-content: center;
+  padding: 4rem 0;
+  color: white;
+}
+
+.contact-holder-box {
+  display: flex;
+  /* Allow wrapping on small screens */
+  width: 80%;
+  max-width: 1200px;
+  gap: 3rem;
+}
+
+.contact-us {
+  width: 50%;
+}
+
+.contact-us p:first-of-type {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.contact-us p:nth-of-type(2) {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.contact-us ul {
+  padding: 0;
+  font-size: 1rem;
+}
+
+.contact-us li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  font-size: rem;
+}
+
+
+/* CONTACT FORM ON RIGHT */
+
+.contact-input {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.up {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.up input,
+.sub-message input,
+.sub-message textarea {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.sub-message {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* MESSAGE textarea: typing starts bottom-left */
+
+.sub-message textarea {
+  width: 100%;
+  /* Or set a fixed width like 300px */
+  height: 300px;
+  /* Custom height */
+  padding-bottom: 6rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: none;
+  resize: vertical;
+  /* Let user resize vertically */
+  box-sizing: border-box;
+  overflow-y: auto;
+  /* Scroll if content overflows */
+  background-color: white;
+  color: #333;
+}
+
+.sub-message textarea::placeholder,
+.sub-message input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #888;
+  opacity: 1;
+}
+
+
+.connect-i  i {
+  margin-right: 1rem;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+}
+
+.contact-us li i {
+  margin-right: 1rem;
+  background-color: #000000;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+}
+
+/* SUBMIT BUTTON */
+
+.submit-btn button {
+  padding: 12px 20px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn button:hover {
+  background-color: #f1f1f1;
+  color: #000000;
+}
+
+/* ****************************************** tools  */
+
+
+#tools-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  align-content: center;
+  width: 100%;
+}
+
+
+.tools-intro {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.tools-intro p {
+  font-size: 1.5rem;
+}
+
+.tools-intro h3 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: #15ade0;
+}
+
+.tools-intro h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+
+.tool-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+  width: 60%;
+  margin-bottom: 4rem;
+
+}
+
+.tool-holder div {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+   /* border-radius: 2rem; */
+  
+  
+}
+
+
+
+
+.tool-holder img {
+ width: 100%;
+  /* height: auto; */
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: rem;
+}
+
+
+.tool-holder img:hover {
+  /* box-shadow: 0 8px 14px rgba(0, 0, 0, 0.5); */
+  transform: scale(1.3);
+  cursor: pointer;
+  border-radius: 2rem;
+/* background-color: rgba(0, 0, 0, 0.03); */
+}
+
+
+.tool-holder p:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tool-holder p:nth-of-type(2) {
+  font-size: 1.2rem;
+  color: rgb(103, 103, 103);
+
+}
+
+
+
+ 
+  
+  
+  
+
+    </style> -->
+
+
+  <style>
+    /* Your original CSS with all class names and IDs preserved */
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    body {
+      font-size: 16px;
+      font-family: "Poppins", Arial, sans-serif;
+      width: 100vw;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #fefed9;
+      position: sticky;
+      top: 0;
+      padding: 0.7rem;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 1, 2, 0.85);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      padding: 0.7rem;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem auto 1rem auto;
+      max-width: 80%;
+      width: 100%;
+      border-radius: 5rem;
+      font-size: 1.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    nav ul {
+      display: flex;
+      column-gap: 3rem;
+      list-style: none;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .m {
+      font-size: 1.5rem;
+      color: white;
+      background-color: #1badee;
+      border-radius: 1.3rem;
+      padding: 0.2rem 0.8rem;
+    }
+
+    .morla {
+      color: white;
+      font-weight: 600;
+    }
+
+    nav button {
+      font-size: 1.5rem;
+      color: #344c36;
+      background-color: #ffffff;
+      border-radius: 2rem;
+      padding: 1rem 2rem;
+      transition: all 0.3s ease;
+    }
+
+    nav button:hover {
+      background-color: #1badee;
+      color: white;
+      cursor: pointer;
+    }
+
+    nav button:active {
+      background-color: #ffc653;
+    }
+
+    nav ul li:hover {
+      color: #666565;
+      cursor: pointer;
+    }
+
+    #hero {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      margin-left: 10rem;
+      margin-right: 10rem;
+      margin-bottom: 7rem;
+    }
+
+    #hero h1 {
+      font-size: 3.5rem;
+      font-weight: 450;
+      width: 100%;
+    }
+
+    .left-about {
+      width: 50%;
+    }
+
+    .left-about p:nth-child(1) {
+      margin-bottom: 1.3rem;
+      font-size: 1.5rem;
+    }
+
+    .left-about :nth-child(3) {
+      margin-top: 1.3rem;
+      font-size: 1.4rem;
+      width: 80%;
+    }
+
+    .view-portfolio {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
+    }
+
+    .view-portfolio button:nth-child(1) {
+      margin-right: 6rem;
+      font-size: 1.4rem;
+      color: white;
+      background-color: #3d3f3c;
+      border-radius: 2rem;
+      padding: 0.6rem 1.5rem;
+      box-shadow: 2rem 0px 1px #9b9592;
+      transition: all 0.3s ease;
+    }
+
+    .view-portfolio button:nth-child(1):hover {
+      background-color: #1895d2;
+      cursor: pointer;
+    }
+
+    .view-portfolio button:nth-child(1):active {
+      background-color: #4e504d;
+      transition: 0.25s;
+    }
+
+    .view-portfolio button:nth-child(2) {
+      margin-right: 6rem;
+      font-size: 1.4rem;
+      color: #344c36;
+      background-color: #ffffff;
+      border-radius: 2rem;
+      padding: 1rem 2rem;
+      border: 1px solid black;
+      transition: all 0.3s ease;
+    }
+
+    .view-portfolio button:nth-child(2):hover {
+      background-color: #302f2e;
+      color: white;
+      cursor: pointer;
+    }
+
+    .view-portfolio button:nth-child(2):active {
+      background-color: #222222;
+      transition: 0.25s;
+    }
+
+    .view-portfolio button i {
+      margin-left: 2rem;
+      background-color: #1895d2;
+      padding: 0.5rem;
+      border-radius: 15px;
+    }
+
+    .image-babs {
+      margin-top: -3rem;
+    }
+
+    #job-bar ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 1rem 0 1rem;
+      background-color: #1895d2;
+    }
+
+    #job-bar div {
+      color: #ffffff;
+    }
+
+    #job-bar {
+      background: white;
+      box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.3);
+      transform: rotate(0.8deg);
+      margin-bottom: 6rem;
+    }
+
+    #services div {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 14rem;
+      margin-right: 17rem;
+      font-size: 1.5rem;
+    }
+
+    #services p {
+      margin-bottom: 1rem;
+    }
+
+    p i {
+      margin-right: 1rem;
+      color: #388db2;
+    }
+
+    h1 em {
+      color: #1996ce;
+      margin-right: 0.5rem;
+    }
+
+    svg {
+      background-color: #ffffff;
+      color: #188d21;
+      border-radius: 5rem;
+      padding: 0.7rem;
+      margin-top: -4rem;
+      margin-bottom: 1rem;
+    }
+
+    .more-content {
+      display: none;
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .more-content.show {
+      display: block;
+    }
+
+    #about {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      margin-left: 10rem;
+      margin-right: 8rem;
+      margin-bottom: -3rem;
+    }
+
+    #about h1 {
+      font-size: 3.5rem;
+      font-weight: 450;
+      width: 100%;
+    }
+
+    .socials ul {
+      padding-left: 9rem;
+      padding-top: -9rem;
+      color: white;
+      display: flex;
+      column-gap: 2rem;
+      margin-left: 60rem;
+      list-style-type: none;
+    }
+
+    .right-about {
+      color: #ffffff;
+      width: 60%;
+      margin-top: 2rem;
+    }
+
+    .right-about h1 em {
+      font-weight: 270;
+    }
+
+    .right-about p:nth-child(1) {
+      margin-bottom: 1.3rem;
+      font-size: 1.4rem;
+    }
+
+    .right-about :nth-child(3) {
+      margin-top: 1.3rem;
+      font-size: 1.2rem;
+      width: 92%;
+    }
+
+    .view-about {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
+    }
+
+    .view-about button:nth-child(1) {
+      margin-right: 6rem;
+      font-size: 1.4rem;
+      color: #344c36;
+      background-color: #ffffff;
+      border-radius: 2rem;
+      padding: 0.6rem 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .view-about button:nth-child(1):hover {
+      background-color: #1badee;
+      color: white;
+      cursor: pointer;
+    }
+
+    .view-about button:nth-child(1):active {
+      background-color: #0f0d0c;
+      transition: 0.25s;
+    }
+
+    .view-about button i {
+      margin-left: 2rem;
+      color: white;
+      background-color: #000601;
+      padding: 0.5rem;
+      border-radius: 15px;
+    }
+
+    .image-morla {
+      margin-top: -3rem;
+      padding-right: 17rem;
+    }
+
+    #services {
+      margin-bottom: 5rem;
+    }
+
+    #about-background {
+      background-image: url(src/assets/bak2.jpg);
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+      margin-bottom: 4rem;
+      /* background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c); */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    #new-services-two {
+      margin-top: 4rem;
+      margin-right: 5rem;
+      margin-left: 10rem;
+      column-gap: rem;
+    }
+
+    #new-services-two {
+      display: grid;
+      grid-template-columns: 0.1fr 2fr 1.7fr 2fr;
+    }
+
+    #new-services-two :nth-child(2) {
+      font-size: 2rem;
+      margin-right: 10rem;
+      margin-left: 4rem;
+      margin-top: -1.1rem;
+    }
+
+    #new-services-two :nth-child(4) {
+      font-size: 1.2rem;
+      margin-right: 6rem;
+      margin-left: -2rem;
+    }
+
+    #new-services-two img {
+      margin-right: 5rem;
+      margin-left: -4rem;
+    }
+
+    .one {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    #new-services-two :nth-child(2) p {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+
+    #best-services {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 5rem;
+      padding-left: 7rem;
+    }
+
+    .services-holder {
+      background-color: #f5f5f5;
+    }
+
+    #best-services i {
+      margin-right: 2rem;
+      margin-left: 2rem;
+      color: #1296d5;
+    }
+
+    #best-services h1 {
+      color: #222222;
+    }
+
+    .rt {
+      margin-left: -10rem;
+    }
+
+    #workExperience {
+      background-color: #ffffff;
+    }
+
+    #education-heading div span {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #education-heading p {
+      font-size: 1.3rem;
+    }
+
+    #education h1 {
+      font-size: 2.5rem;
+    }
+
+    #cv-maim {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    #cv-holder {
+      flex: 0.44;
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+
+    #cv-holder li {
+      background-color: #ededed;
+      padding: 2rem 4rem;
+      list-style: none;
+      border-radius: 1.5rem;
+    }
+
+    .underline {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 0.1px solid rgb(214, 214, 214);
+    }
+
+    .underline h2 {
+      font-weight: 600;
+      font-size: 2rem;
+      color: #22222;
+    }
+
+    .underline h2 i {
+      margin-right: 1rem;
+      color: #ffffff;
+      padding: 1rem;
+      background-color: #388db2;
+      border-radius: 3rem;
+    }
+
+    .underline-2 {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .underline-2>div {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .school {
+      max-width: 70%;
+    }
+
+    .school h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+      color: #333;
+    }
+
+    .school p {
+      font-size: 1.2rem;
+      color: #8f8f8f;
+      margin: 0;
+    }
+
+    .year {
+      text-align: right;
+      min-width: 80px;
+    }
+
+    .year p {
+      color: white;
+      margin: 0;
+      margin-top: 0.2rem;
+      font-size: 1.2rem;
+      background-color: #838383;
+      border-radius: 0.5rem;
+      padding: 0.3rem 0.7rem;
+      white-space: nowrap;
+    }
+
+    #workExperience {
+      margin-top: -4rem;
+    }
+
+    #education span {
+      padding-top: 3rem;
+    }
+
+    #myProjects {
+      margin-top: -9rem;
+      /* background-image: url(src/assets/bak.jpg); */
+      background: linear-gradient(45deg, #1a4699, #06152e);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-bottom: 4rem;
+    }
+
+    #projectHolder {
+      column-gap: 3rem;
+      display: flex;
+      width: 90%;
+      list-style: none;
+      border-radius: 1.5rem;
+      height: 550px;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    #projects {
+      padding-top: 7rem;
+      padding-bottom: 3rem;
+    }
+
+    #projects-heading div span {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #projects-heading p {
+      font-size: 1.3rem;
+      color: white;
+    }
+
+    #projects h1 {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    #projectMain {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #projectHolder .projectImage {
+      background-color: #ac3f3f;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      width: 60%;
+    }
+
+    #projectHolder .projectImage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #projectHolder .projectDescription {
+      width: 45%;
+    }
+
+    .projectDescription {
+      margin-left: 2rem;
+    }
+
+    .work-tag ul {
+      display: flex;
+      column-gap: 2rem;
+      list-style: none;
+      margin-top: 4rem;
+    }
+
+    .work-tag li {
+      background-color: #32b3ef;
+      padding: 0.8rem 1.3rem;
+      border-radius: 2rem;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .view-details {
+      margin-right: 6rem;
+      font-size: 1.4rem;
+      color: rgb(0, 0, 0);
+      background-color: #ffffff;
+      border-radius: 2rem;
+      padding: 0.8rem 1.5rem;
+      box-shadow: 2rem 0px 1px rgb(170, 170, 170);
+      transition: all 0.3s ease;
+    }
+
+    .description h2 {
+      font-size: 2.3rem;
+      font-weight: 400;
+      padding-bottom: 3%;
+      color: white;
+    }
+
+    .description p {
+      color: #f5f5f5;
+      font-size: 1.3rem;
+      width: 85%;
+      padding-bottom: 3rem;
+    }
+
+    #projectMain2 {
+      margin-top: 3rem;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: ;
+    }
+
+    #projectMain3 {
+      margin-top: 3rem;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #contact-main {
+      display: flex;
+      background-color: #1296d5;
+      width: 100%;
+      justify-content: center;
+      padding: 4rem 0;
+      color: white;
+    }
+
+    .contact-holder-box {
+      display: flex;
+      width: 80%;
+      max-width: 1200px;
+      gap: 3rem;
+    }
+
+    .contact-us {
+      width: 50%;
+    }
+
+    .contact-us p:first-of-type {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-us h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .contact-us p:nth-of-type(2) {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .contact-us ul {
+      padding: 0;
+      font-size: 1rem;
+    }
+
+    .contact-us li {
+      list-style: none;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-input {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .up {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .up input,
+    .sub-message input,
+    .sub-message textarea {
+      flex: 1;
+      padding: 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .sub-message {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .sub-message textarea {
+      width: 100%;
+      height: 300px;
+      padding-bottom: 6rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: 5px;
+      border: none;
+      resize: vertical;
+      box-sizing: border-box;
+      overflow-y: auto;
+      background-color: white;
+      color: #333;
+    }
+
+    .connect-i i {
+      margin-right: 1rem;
+      color: white;
+      padding: 0.8rem;
+      border-radius: 1.5rem;
+    }
+
+    .contact-us li i {
+      margin-right: 1rem;
+      background-color: #000000;
+      padding: 0.8rem;
+      border-radius: 1.5rem;
+    }
+
+    .submit-btn button {
+      padding: 12px 20px;
+      background-color: rgb(0, 0, 0);
+      color: #ffffff;
+      border: none;
+      border-radius: 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn button:hover {
+      background-color: #f1f1f1;
+      color: #000000;
+    }
+
+    #tools-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      align-content: center;
+      width: 100%;
+    }
+
+    .tools-intro {
+      padding-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tools-intro p {
+      font-size: 1.5rem;
+    }
+
+    .tools-intro h3 {
+      font-size: 2.3rem;
+      font-weight: 500;
+      color: #15ade0;
+    }
+
+    .tools-intro h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+
+    .tool-holder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 1.5rem;
+      width: 60%;
+      margin-bottom: 4rem;
+    }
+
+    .tool-holder div {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tool-holder img {
+      width: 100%;
+      object-fit: contain;
+      transition: all 0.3s ease-in-out;
+      margin-bottom: 1rem;
+    }
+
+    .tool-holder img:hover {
+      transform: scale(1.3);
+      cursor: pointer;
+      border-radius: 2rem;
+    }
+
+    .tool-holder p:first-of-type {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .tool-holder p:nth-of-type(2) {
+      font-size: 1.2rem;
+      color: rgb(103, 103, 103);
+    }
+
+    #servicesSection {
+      padding-bottom: 3rem;
+      background-color: #fff7ed;
+      margin-top: -6rem;
+    }
+
+    #school-work {
+      background-color: rgb(247, 240, 214);
+      padding-bottom: rem;
+    }
+
+    #hero-background {
+      /* background: linear-gradient(120deg, #e0c3fc, #8ec5fc); */
+      background-image: url(src/assets/v904-nunny-012.jpg);
+      margin-bottom: -9rem;
+      padding-top: 4rem;
+      padding-bottom: 6rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Responsive Media Queries */
+    /* Large screens (1024px and above) - default styles */
+
+    /* Tablets (768px to 1023px) */
+    @media (max-width: 1023px) {
+      nav {
+        max-width: 90%;
+        flex-wrap: wrap;
+      }
+
+      nav ul {
+        margin-top: 1rem;
+        column-gap: 1.5rem;
+      }
+
+      #hero,
+      #about {
+        margin-left: 5rem;
+        margin-right: 5rem;
+      }
+
+      #services div {
+        margin-left: 5rem;
+        margin-right: 5rem;
+      }
+
+      .image-morla {
+        padding-right: 5rem;
+      }
+
+      .socials ul {
+        margin-left: 40rem;
+      }
+
+      .tool-holder {
+        width: 80%;
+        flex-wrap: wrap;
+      }
+
+      .tool-holder div {
+        width: 45%;
+        margin: 1rem;
+      }
+
+      .contact-holder-box {
+        width: 90%;
+      }
+
+      #projectHolder {
+        flex-direction: column;
+        height: auto;
+      }
+
+      #projectHolder .projectImage,
+      #projectHolder .projectDescription {
+        width: 100%;
+        margin: 1rem 0;
+      }
+    }
+
+    /* Mobile (up to 767px) */
+    @media (max-width: 767px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        max-width: 95%;
+        padding: 1rem;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem 0;
+        column-gap: 1rem;
+        row-gap: 0.5rem;
+        font-size: 1rem;
+      }
+
+      nav button {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+        margin-top: 1rem;
+      }
+
+      #hero,
+      #about {
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
+      .left-about,
+      .right-about {
+        width: 100%;
+      }
+
+      #hero h1,
+      #about h1 {
+        font-size: 2.5rem;
+      }
+
+      .view-portfolio,
+      .view-about {
+        align-items: center;
+      }
+
+      .view-portfolio button,
+      .view-about button {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .image-babs,
+      .image-morla {
+        margin-top: 2rem;
+        padding-right: 0;
+        text-align: center;
+      }
+
+      #job-bar ul {
+        flex-wrap: wrap;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+      }
+
+      #services div {
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
+      #new-services-two {
+        grid-template-columns: 1fr;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
+      .socials ul {
+        margin-left: 0;
+        padding-left: 0;
+        justify-content: center;
+      }
+
+      .tool-holder div {
+        width: 100%;
+      }
+
+      .contact-holder-box {
+        flex-direction: column;
+      }
+
+      .contact-us,
+      .contact-input {
+        width: 100%;
+      }
+
+      .up {
+        flex-direction: column;
+      }
+
+      .socials ul {
+        margin-left: 0;
+        padding: 1rem 0;
+        justify-content: center;
+      }
+
+      #projectHolder {
+        padding: 10px;
+      }
+
+      .work-tag ul {
+        flex-wrap: wrap;
+      }
+
+      #best-services {
+        padding-left: 0;
+        font-size: 3.5rem;
+      }
+    }
+
+    /* Small mobile (up to 480px) */
+    @media (max-width: 480px) {
+      nav ul li {
+        font-size: 0.9rem;
+      }
+
+      #hero h1,
+      #about h1 {
+        font-size: 2rem;
+      }
+
+      .view-portfolio button,
+      .view-about button {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+      }
+
+      #job-bar ul li {
+        font-size: 1rem;
+        padding: 0.3rem;
+      }
+
+      .description h2 {
+        font-size: 1.8rem;
+      }
+
+      .description p {
+        font-size: 1.1rem;
+      }
+
+      .tools-intro h2 {
+        font-size: 2.5rem;
+      }
+
+      .tools-intro h3 {
+        font-size: 1.8rem;
+      }
+    }
+
+    /* Adjustments for landscape orientation */
+    @media (max-height: 480px) and (orientation: landscape) {
+
+      #hero,
+      #about {
+        margin-bottom: 2rem;
+      }
+
+      .view-portfolio,
+      .view-about {
+        margin-top: 2rem;
+      }
+
+      #projectHolder {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+
+    <header>
+      <nav id="nav">
+
+        <div>
+          <span class="m">M</span>
+          <span class="morla">Morla.</span>
+        </div>
+
+        <ul>
+          <li><a href="#hero-background">Home</a></li>
+          <li><a href="#servicesSection">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Experience</a></li>
+          <li><a href="#tools-main">Skills</a></li>
+          <li><a href="#contact-main">Contact</a></li>
+        </ul>
+
+
+        <a href="#contact-main"><button>Contact Me</button></li></a>
+      </nav>
+
+    </header>
+    <section id="hero-background">
+
+
+      <section id="hero">
+
+        <span class="left-about">
+
+          <div>
+            <p>Hello There!</p>
+            <h1>I'm <em>Mohammed,</em> <br>A Junior Web Developer<br>Based in Ghana</h1>
+            <p>I'm an Experienced Web Developer with 1+ years in the field collaborating with various companies and
+              startups
+            </p>
+          </div>
+
+          <div class="view-portfolio">
+            <span>
+
+              <li><a href="#about"><button>
+                    View My Portfolio <i class="fa-solid fa-arrow-right"></i></button></a></li>
+
+              <!-- <button>
+              Hire Me
+            </button> -->
+            </span>
+
+          </div>
+        </span>
+
+        <section class="image-babs">
+          <img src="src/assets/image11.png" width="800px">
+
+        </section>
+
+      </section>
+    </section>
+
+    <section id="servicesSection">
+      <section id="best-services">
+        <h1><i class="fa-solid fa-minus"></i>Best Services<i class="fa-solid fa-minus"></i></h1>
+      </section>
+
+
+      <section id="new-services-two">
+
+
+        <div>
+          <h1 class="one">(01)</h1>
+        </div>
+
+        <div>
+          <h1>Web Development<p>Portfolios | Business Sites | Landing Pages</p>
+          </h1>
+
+        </div>
+
+        <div>
+          <h1><img src="src/assets/web.png" width="400px" alt=""></h1>
+        </div>
+
+        <div>
+          <p>I specialize in designing and developing user-friendly, responsive websites using HTML, CSS, and
+            JavaScript.
+          </p>
+        </div>
+
+
+      </section>
+
+      <section id="new-services-two">
+
+
+        <div>
+          <h1 class="one">(02)</h1>
+        </div>
+
+        <div>
+          <h1>UI/UX Design
+            <p>Wireframes | Prototypes | Web & App Interfaces | User Flows
+            </p>
+          </h1>
+
+        </div>
+
+        <div>
+          <h1><img src="src/assets/ui.png" width="400px" alt=""></h1>
+        </div>
+
+        <div>
+          <p>I design intuitive interfaces and smooth user flows using wireframes and prototypes. My goal is to create
+            digital experiences that are both user-friendly and visually appealing.</p>
+        </div>
+
+      </section>
+
+      <section id="new-services-two">
+
+
+        <div>
+          <h1 class="one">(02)</h1>
+        </div>
+
+        <div>
+          <h1>Graphic Design
+            <p>Logos | Flyers | Posters | Social Media Graphics
+            </p>
+          </h1>
+
+        </div>
+
+        <div>
+          <h1><img src="src/assets/graphic.png" width="400px" alt=""></h1>
+        </div>
+
+        <div>
+          <p>I create bold and effective visuals—logos, flyers, posters, and social media content—designed to
+            communicate
+            your message clearly and creatively.</p>
+        </div>
+
+
+      </section>
+
+    </section>
+
+    <section id="school-work">
+      <section id="about-background">
+
+        <div id="about">
+
+          <section class="image-morla">
+            <img src="src/assets/image222.png" width="800px">
+          </section>
+
+          <span class="right-about">
+
+            <div class="rt">
+              <p><i class="fa-solid fa-minus"></i>About Me</p>
+              <h1>Who is <em>Umar Mohammed,</em></h1>
+              <p>I am a Junior Web Developer with a love for clean design and meaningful projects. With a background in
+                Renewable Energy Systems, I’m now blending tech and creativity to build websites that are simple,
+                responsive, and impactful. I enjoy learning, solving problems, and creating things that make a
+                difference.
+
+              </p>
+
+              <div class="view-about">
+                <span>
+
+                  <a href="https://drive.google.com/file/d/1qO9XVJy1WIP2_Aj_onLcnPfP42iY1TUr/view?usp=sharing">
+                    <button class="view">
+                      Download CV <i class="fa-solid fa-arrow-right"></i></button>
+                  </a>
+                </span>
+
+
+
+              </div>
+            </div>
+          </span>
+        </div>
+
+
+
+      </section>
+
+      <section id="workExperience">
+
+        <section id="education">
+
+          <section id="education-heading">
+
+            <div>
+              <span>
+
+                <p><i class="fa-solid fa-minus"></i>Education & Work</p>
+                <h1>My <em>Education</em> and <em>Work Experience</em></h1>
+              </span>
+
+            </div>
+          </section>
+
+        </section>
+
+        <section id="cv-maim">
+
+          <div id="cv-holder">
+
+            <div>
+              <ul>
+                <li>
+                  <div class="underline">
+                    <h2><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+                  </div>
+
+                  <div class="underline-2">
+
+                    <div>
+                      <div>
+                        <span class="school">
+                          <h2> Hochshule HSD University</h2>
+                          <p>BSc Energy and Environment </p>
+                        </span>
+                      </div>
+
+                      <span class="year">
+                        <p>03-08/2024</p>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="underline-2">
+
+                    <div>
+                      <div>
+                        <span class="school">
+                          <h2> Koforidua Technical University</h2>
+                          <p>BTech Renewable Energy Engineering</p>
+                        </span>
+                      </div>
+
+                      <div>
+                        <span class="year">
+                          <p>2022 - 2024</p>
+                        </span>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="underline-2">
+
+                    <div>
+                      <div>
+                        <span class="school">
+                          <h2>Koforidua Technical University</h2>
+                          <p>HND Renewable Energy Engineering</p>
+                        </span>
+                      </div>
+
+                      <span class="year">
+                        <p>2019 - 2022</p>
+                      </span>
+                    </div>
+                  </div>
+
+
+                </li>
+              </ul>
+            </div>
+
+
+
+          </div>
+
+          <div id="cv-holder">
+
+            <div>
+              <ul>
+                <li>
+                  <div class="underline">
+                    <h2><i class="fa-solid fa-briefcase"></i>Experience</h2>
+                  </div>
+
+                  <div class="underline-2">
+
+                    <div>
+                      <div>
+                        <span class="school">
+                          <h2> Koforidua Technical University</h2>
+                          <p>
+                            Energy Lab Technician</p>
+                        </span>
+                      </div>
+
+                      <span class="year">
+                        <p>2022-2023</p>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="underline-2">
+
+                    <div>
+                      <div>
+                        <span class="school">
+                          <h2> Lumentech Energy Solutions</h2>
+                          <p>Solar Installation Technician</p>
+                        </span>
+                      </div>
+
+                      <div>
+                        <span class="year">
+                          <p>2021-2022</p>
+                        </span>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="underline-2">
+
+                    <div>
+                      <div>
+                        <span class="school">
+                          <h2> Al-Wahda Multimedia</h2>
+                          <p>Graphic Designer</p>
+                        </span>
+                      </div>
+
+                      <span class="year">
+                        <p>2017-2020</p>
+                      </span>
+                    </div>
+                  </div>
+
+
+                </li>
+              </ul>
+            </div>
+
+
+
+          </div>
+
+        </section>
+      </section>
+
+    </section>
+
+
+    <section id="job-bar">
+      <div>
+        <ul>
+          <i class="fa-solid fa-star-of-life"></i>
+          <li>Web Development</li>
+          <i class="fa-solid fa-star-of-life"></i>
+          <li>Web Design</li>
+          <i class="fa-solid fa-star-of-life"></i>
+          <li>UX/UI Design</li>
+          <i class="fa-solid fa-star-of-life"></i>
+          <li>Graphic Design</li>
+          <i class="fa-solid fa-star-of-life"></i>
+        </ul>
+      </div>
+
+    </section>
+
+    <section id="myProjects">
+
+      <section id="projects">
+
+        <section id="projects-heading">
+
+          <div>
+            <span>
+
+              <p><i class="fa-solid fa-minus"></i>Projects</p>
+              <h1>My <em>Latest Projects</em></h1>
+            </span>
+          </div>
+
+        </section>
+
+      </section>
+
+      <section id="projectMain3">
+
+        <div id="projectHolder">
+
+          <div class="projectImage"> <img src="src/assets/Hotel.png" width="">
+
+          </div>
+
+
+          <div class="projectDescription">
+
+            <div class="work-tag">
+              <ul>
+                <li>UI/UX Desin</li>
+                <li>App Design</li>
+                <li>Wireframe</li>
+              </ul>
+            </div>
+
+            <div class="description">
+              <h2>A Demo Hotel Website <br>
+                Cozy, Clean, Classy</h2>
+
+              <p> Feel the Comfort Stay is a sleek demo hotel app that displays rooms, features, and booking
+                layout—purely for UI showcase, no active functionality. </p>
+
+            </div>
+
+            <a href="https://hoteldemosite.netlify.app/"><button class="view-details">
+                View Project <i class="fa-solid fa-arrow-right"></i></button></a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="projectMain2">
+
+        <div id="projectHolder">
+
+
+
+          <div class="projectDescription">
+
+            <div class="work-tag">
+              <ul>
+                <li>UI/UX Desin</li>
+                <li>App Design</li>
+                <li>Wireframe</li>
+              </ul>
+            </div>
+
+            <div class="description">
+              <h2>Library Management <br> Web Application</h2>
+
+              <p>JubiLib is a smart library app for exploring books, viewing details, and tracking your reading. Admins
+                can easily add, edit, or remove titles to keep the library organized.</p>
+
+            </div>
+
+            <a href="https://jubilib.netlify.app/"><button class="view-details">
+                View My Portfolio <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+
+
+          </div>
+
+
+
+          <div class="projectImage"> <img src="src/assets/jubi.png" width="">
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+
+      <section id="projectMain">
+
+        <div id="projectHolder">
+          <div class="projectImage"> <img src="src/assets/portfolio.png" width="">
+
+          </div>
+
+
+          <div class="projectDescription">
+
+            <div class="work-tag">
+              <ul>
+                <li>UI/UX Desin</li>
+                <li>App Design</li>
+                <li>Wireframe</li>
+              </ul>
+            </div>
+
+            <div class="description">
+              <h2>My Portfolio Projects<br>
+                Website</h2>
+
+              <p>Web interfaces and apps crafted with modern design, clean code, and user-focused experiences — a showcase of my journey in frontend development.
+              </p>
+
+            </div>
+
+            <a href="https://edanpa.netlify.app/"> <button class="view-details">
+                View Project <i class="fa-solid fa-arrow-right"></i></button></a>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+    </section>
+
+
+    <section id="tools-main">
+
+      <div class="tools-intro">
+        <p><i class="fa-solid fa-minus"></i>My Favourite Tools</p>
+        <h3><em>Exploring the Tools</em></h3>
+        <h2>Behind My Designs</h2>
+      </div>
+
+
+      <div class="tool-holder">
+
+        <div>
+          <div><img src="src/assets/Icons/html (1).png" alt="">
+            <div>
+              <p class="tool-name">HTML</p>
+              <p class="tool-level">80%</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div><img src="src/assets/Icons/css.png" alt="">
+            <div>
+              <p class="tool-name">CSS</p>
+              <p class="tool-level">65%</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div><img src="src/assets/Icons/javascript.png" alt="">
+            <div>
+              <p class="tool-name">JavaScript</p>
+              <p class="tool-level">35%</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div>
+          <div><img src="src/assets/Icons/react.png" alt="">
+            <div>
+              <p class="tool-name">React</p>
+              <p class="tool-level">50%</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div><img src="src/assets/Icons/figma.png" alt="">
+            <div>
+              <p class="tool-name">Figma</p>
+              <p class="tool-level">10%</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div><img src="src/assets/Icons/adobe-photoshop.png" alt="">
+            <div>
+              <p class="tool-name">Photoshop</p>
+              <p class="tool-level">70%</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <div><img src="src/assets/Icons/corel-draw.png" alt="">
+            <div>
+              <p class="tool-name">CoralDraw</p>
+              <p class="tool-level">65%</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+
+    <section id="contact-main">
+
+      <div class="contact-holder-box">
+
+        <div class="contact-us">
+          <div class="connect-i">
+            <p><i class="fa-solid fa-minus"></i>Contact Us</p>
+            <h2>Let's <em>Connect <br> and Collaborate</em>
+            </h2>
+          </div>
+
+          <div>
+            <p>
+              Have a project in mind, a question, or just want to say hello? I’d love to hear from you. Fill out the
+              form
+              below or reach out via email — I’ll get back to you as soon as possible!
+            </p>
+
+            <ul>
+
+              <li><i class="fa-solid fa-envelope"></i>Gmail</li>
+
+              <a href="https://www.linkedin.com/in/umar-mohammed-b4a407240?originalSubdomain=gh">
+                <li><i class="fa-brands fa-linkedin"></i></i>LinkedIn</li>
+              </a>
+
+
+              <a href="https://github.com/babsmorla?tab=repositories">
+                <li><i class="fa-brands fa-github"></i>GitHub</li>
+              </a>
+
+              <a href="https://www.instagram.com/amazing_babs/"></a>
+              <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+
+            </ul>
+
+          </div>
+
+
+        </div>
+
+
+
+        <div class="contact-input">
+
+          <div class="up">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+          </div>
+
+          <div class="up">
+            <input type="email" placeholder="Email">
+            <input type="number" placeholder="Phone Number">
+          </div>
+
+          <div class="sub-message">
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Message"></textarea>
+          </div>
+
+          <div class="submit-btn">
+            <button type="submit">Send Message</button>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
